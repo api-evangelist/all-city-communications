@@ -1,8 +1,29 @@
 aid: all-city-communications
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/all-city-communications.png
 name: All City Communications
-description: All City Communications is a company surfaced as a portfolio company of battery-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  All City Communications is a Wisconsin-based telephone answering and call
+  center service provider offering 24/7 live answering for businesses across
+  many industries. Founded in 1979 (originally as a paging service), the company
+  operates from Green Bay and Milwaukee and delivers custom call scripting,
+  message delivery by text, email or live call patching, call recording with
+  secure storage, a customer web portal for real-time call data, and detailed
+  call reporting. It serves property management, home restoration, electrical /
+  plumbing / HVAC trades, municipalities, home health and hospice, healthcare,
+  legal, landscaping, and travel and hospitality clients. All City Communications
+  is a service business and does not currently publish a public developer API,
+  OpenAPI specification, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/all-city-communications/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +31,44 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: >-
+  Enriched 2026-07-17 from the company's public website (allcitycom.com). No API
+  or developer surface exists, so no technical artifacts apply. The vc-portfolio
+  / battery-ventures backing is inherited from the stub source and is unverified
+  against this company (a Green Bay, WI answering service); treat as provenance
+  only, not a confirmed investor relationship.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Answering Service
+- Call Center
+- Telecommunications
+- Communications
+- Business Services
+- Customer Support
 apis: []
+common:
+- type: Website
+  url: https://www.allcitycom.com/
+- type: About
+  url: https://www.allcitycom.com/about
+- type: Pricing
+  url: https://www.allcitycom.com/answering-service/pricing
+- type: SignUp
+  url: https://www.allcitycom.com/answering-service/free-trial
+- type: Support
+  url: https://www.allcitycom.com/contact
+- type: TermsOfService
+  url: https://www.allcitycom.com/terms-of-service
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
